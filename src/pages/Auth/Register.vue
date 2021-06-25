@@ -6,14 +6,14 @@
           <div class="md-layout-item md-medium-size-100 md-size-33">
             <md-card>
               <md-card-header data-background-color="green">
-                <h4 class="title">Register</h4>
-                <p class="category">Complete your authentication</p>
+                <h4 class="title">Registro</h4>
+                <p class="category">Completa tu registro</p>
               </md-card-header>
               <md-card-content>
                 <div class="md-layout">
                   <div class="md-layout-item md-small-size-100 md-size-100">
                     <md-field :class="invalid('username')">
-                      <label>Username</label>
+                      <label>Email</label>
                       <md-input v-model="username" type="text"></md-input>
                     </md-field>
                   </div>
@@ -34,19 +34,19 @@
                   </div>
                   <div class="md-layout-item md-medium-size-100  md-size-100">
                     <md-field :class="invalid('name')">
-                      <label>Name</label>
+                      <label>Nombre</label>
                       <md-input v-model="name" type="text"></md-input>
                     </md-field>
                   </div>
                   <div class="md-layout-item md-medium-size-100  md-size-100">
                     <md-field :class="invalid('lastname')">
-                      <label>Last Name</label>
+                      <label>Apellido</label>
                       <md-input v-model="lastname" type="text"></md-input>
                     </md-field>
                   </div>
                   <div class="md-layout-item md-medium-size-100 md-size-33">
                     <md-field :class="invalid('run')">
-                      <label>Run</label>
+                      <label>Rut</label>
                       <md-input v-model="run" type="text"></md-input>
                     </md-field>
                   </div>
@@ -57,12 +57,12 @@
                       :md-model-type="String"
                       md-immediately
                     >
-                      <label>Birthdate</label>
+                      <label>Fecha De Nacimiento</label>
                     </md-datepicker>
                   </div>
                   <div class="md-layout-item md-medium-size-100 md-size-33">
                     <md-field :class="invalid('gender')">
-                      <label>Gender</label>
+                      <label>Genero</label>
                       <md-select v-model="gender">
                         <md-option value="M" class="ls--option-span"
                           >Masculino</md-option
@@ -75,7 +75,7 @@
                   </div>
                   <div class="md-layout-item md-medium-size-100 md-size-100">
                     <md-field :class="invalid('region')">
-                      <label>Region</label>
+                      <label>Región</label>
                       <md-select
                         v-model="region"
                         @md-selected="onChangeLoadCities($event)"
@@ -92,7 +92,7 @@
                   </div>
                   <div class="md-layout-item md-medium-size-100 md-size-50">
                     <md-field :class="invalid('city')">
-                      <label>City</label>
+                      <label>Provincia</label>
                       <md-select
                         v-model="city"
                         @md-selected="onChangeLoadDistricts($event)"
@@ -110,7 +110,7 @@
                   </div>
                   <div class="md-layout-item md-medium-size-100 md-size-50">
                     <md-field :class="invalid('district')">
-                      <label>District</label>
+                      <label>Comuna</label>
                       <md-select
                         v-model="district"
                         :disabled="collection.disabledDistricts"
@@ -127,13 +127,13 @@
                   </div>
                   <div class="md-layout-item md-medium-size-100 md-size-70">
                     <md-field :class="invalid('address')">
-                      <label>Address</label>
+                      <label>Dirección</label>
                       <md-input v-model="address" type="text"></md-input>
                     </md-field>
                   </div>
                   <div class="md-layout-item md-medium-size-100 md-size-30">
                     <md-field :class="invalid('house')">
-                      <label>Number</label>
+                      <label>Número</label>
                       <md-input v-model="house" type="text"></md-input>
                     </md-field>
                   </div>
@@ -144,7 +144,7 @@
                       class="md-primary md-block"
                       v-on:click="submit"
                       :disabled="sending"
-                      >Create your account</md-button
+                      >Crea tu cuenta</md-button
                     >
                   </div>
                   <div
@@ -161,7 +161,7 @@
                     <router-link
                       :to="{ name: 'login' }"
                       class="ls--create-account-size"
-                      >sign in</router-link
+                      >iniciar Sesión</router-link
                     >
                   </div>
                 </div>

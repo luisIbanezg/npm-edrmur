@@ -6,14 +6,14 @@
           <div class="md-layout-item md-medium-size-100 md-size-33">
             <md-card>
               <md-card-header data-background-color="green">
-                <h4 class="title">Authentication</h4>
-                <p class="category">Complete your authentication</p>
+                <h4 class="title">Inicio Sesión</h4>
+                <p class="category">Ingrese sus datos</p>
               </md-card-header>
               <md-card-content>
                 <div class="md-layout">
                   <div class="md-layout-item md-medium-size-100 md-size-100">
                     <md-field :class="invalid('username')">
-                      <label>Username</label>
+                      <label>Email</label>
                       <md-input v-model="username" type="text"></md-input>
                     </md-field>
                   </div>
@@ -30,7 +30,7 @@
                       class="md-primary md-block"
                       v-on:click="submit"
                       :disabled="sending"
-                      >Sign In</md-button
+                      >Iniciar sesión</md-button
                     >
                   </div>
                 </div>
@@ -46,7 +46,7 @@
                     <router-link
                       :to="{ name: 'register' }"
                       class="ls--create-account-size"
-                      >create your account</router-link
+                      >crear cuenta</router-link
                     >
                   </div>
                 </div>
