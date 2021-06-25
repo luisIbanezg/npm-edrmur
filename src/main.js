@@ -57,52 +57,52 @@ Vue.use(GlobalComponents);
 Vue.use(GlobalDirectives);
 Vue.use(Notifications);
 
-// // Datepicker locale
-const { material: datepicker } = Vue;
-datepicker.locale = {
-  ...datepicker.locale,
-  // i18n strings
-  days: [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-  ],
-  shortDays: ["Sun", "Mon", "Tue", "Wed", "Jue", "Fri", "Sat"],
-  shorterDays: ["S", "M", "T", "W", "T", "F", "S"],
-  months: [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "Junio",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ],
-  shortMonths: [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Junio",
-    "July",
-    "Aug",
-    "Sept",
-    "Oct",
-    "Nov",
-    "Dec"
-  ],
-  shorterMonths: ["J", "F", "M", "A", "M", "Ju", "Ju", "A", "Se", "O", "N", "D"]
-};
+// Datepicker locale
+// const { material: datepicker } = Vue;
+// datepicker.locale = {
+//   ...datepicker.locale,
+//   // i18n strings
+//   days: [
+//     "Sunday",
+//     "Monday",
+//     "Tuesday",
+//     "Wednesday",
+//     "Thursday",
+//     "Friday",
+//     "Saturday"
+//   ],
+//   shortDays: ["Sun", "Mon", "Tue", "Wed", "Jue", "Fri", "Sat"],
+//   shorterDays: ["S", "M", "T", "W", "T", "F", "S"],
+//   months: [
+//     "January",
+//     "February",
+//     "March",
+//     "April",
+//     "May",
+//     "Junio",
+//     "July",
+//     "August",
+//     "September",
+//     "October",
+//     "November",
+//     "December"
+//   ],
+//   shortMonths: [
+//     "Jan",
+//     "Feb",
+//     "Mar",
+//     "Apr",
+//     "May",
+//     "Junio",
+//     "July",
+//     "Aug",
+//     "Sept",
+//     "Oct",
+//     "Nov",
+//     "Dec"
+//   ],
+//   shorterMonths: ["J", "F", "M", "A", "M", "Ju", "Ju", "A", "Se", "O", "N", "D"]
+// };
 
 /* eslint-disable no-new */
 new Vue({
