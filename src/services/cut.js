@@ -59,7 +59,8 @@ const districts = {
     { code: "13101", name: "Santiago" },
     { code: "13102", name: "Cerrillos" },
     { code: "13103", name: "Cerro Navia" },
-    { code: "13104", name: "Conchalí" }
+    { code: "13104", name: "Conchalí" },
+    { code: "13105", name: "Huechuraba" }
   ]
 };
 
