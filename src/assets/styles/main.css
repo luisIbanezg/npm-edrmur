@@ -1,0 +1,54 @@
+.md-theme-default .ls--md-invalid::before {
+  background-color: #f55a4e !important;
+}
+
+.md-theme-default .ls--md-invalid > label {
+  color: #f55a4e !important;
+}
+
+.ls--option-span .md-ripple > span.md-list-item-text {
+  position: relative;
+}
+
+.ls--login-background {
+  height: 100vh;  
+  background-position: top;
+  background-size: cover;
+}
+
+.ls--login-background-1 {
+  background-image: url("../img/login-1.jpg");
+}
+
+.ls--login-background-2 {
+  background-image: url("../img/login-2.jpg");
+}
+
+.ls--login-background-3 {
+  background-image: url("../img/login-3.jpg");
+}
+
+.ls--login-background:after {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  left: 0;
+  top: 0;
+  content: ""; 
+  background: rgba(0,0,0,.5); 
+}
+
+.ls--login-background > .ls--login-wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+
+.ls--create-account {
+  text-align: right;
+}
+.ls--create-account-size {
+  font-size: 1rem;
+}
