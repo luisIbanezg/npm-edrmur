@@ -26,11 +26,15 @@ root
 │   └── index.html
 └── src
     ├── App.vue
+    ├── config
+    │   └── app.js
     ├── assets
     │   ├── img
-    │   └── scss
-    │       ├── material-dashboard.scss
-    │       └── md
+    │   ├── scss
+    │   │   ├── material-dashboard.scss
+    │   │   └── md
+    │   └── styles
+    │       └── main.css
     ├── components
     │   ├── Cards
     │   │   ├── ChartCard.vue
@@ -56,23 +60,20 @@ root
     ├── material-dashboard.js
     ├── pages
     │   ├── Dashboard.vue
-    │   ├── Icons.vue
+    │   ├── Auth
+    │   │   ├── Login.vue
+    │   │   └── Register.vue
     │   ├── Layout
     │   │   ├── Content.vue
     │   │   ├── ContentFooter.vue
     │   │   ├── DashboardLayout.vue
     │   │   ├── MobileMenu.vue
     │   │   └── TopNavbar.vue
-    │   ├── Maps.vue
-    │   ├── Notifications.vue
-    │   ├── TableList.vue
-    │   ├── Typography.vue
-    │   ├── UpgradeToPRO.vue
-    │   ├── UserProfile
-    │   │   ├── EditProfileForm.vue
-    │   │   └── UserCard.vue
-    │   ├── UserProfile.vue
     │   └── index.js
+    ├── services
+    │   ├── auth.js
+    │   ├── cut.js
+    │   └── storage.js
     └── routes
         └── routes.js
 ```
